@@ -1,0 +1,124 @@
+/* DiagramStyles.css */
+
+.diagram-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5vh; /* Uso de vh para un margen relativo */
+}
+
+.motors-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 90%;
+}
+
+.motor-with-cable {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.motor-box {
+  border: 3px solid black;
+  padding: 1vw; /* Uso de vw para un padding relativo */
+  margin-bottom: 0; /* Espacio para el cable */
+
+}
+
+.motor-label {
+  text-align: center;
+  font-weight: bold;
+}
+
+.flow-cable {
+  background-color: black;
+  height: 7vh; /* Altura del cable */
+  width: 0.2vw; /* Ancho del cable */
+  
+}
+
+.horizontal-connector {
+  width: 86.4%; 
+  height: 5px;
+  background-color: black;
+  position: absolute;
+  bottom: 78.33vh;
+  right: 89px;
+}
+
+.intermediate-consumption {
+  position: absolute;
+  top: 50%;
+  left: 68.4%;
+  display: flex;
+  align-items: center;
+  transform: translate(-50%, -50%);
+}
+
+.intermediate-consumption-cable {
+  background-color: #0f0101 ;
+  width: 15vw; /* Longitud del cable */
+  height: 3px;
+  position: absolute;
+  left: -277px; /* Ajusta para alinear con el vertical-connector */
+}
+
+.intermediate-consumption-box {
+  border: 3px solid black;
+  padding: 1vw;
+  margin-left: 0px; /* Espacio después del cable */
+}
+
+/* Estilos para la caja de consumo intermedio en el lado izquierdo */
+.left-intermediate-consumption {
+  position: absolute;
+  top: 50%;
+  left: 18.5%;
+  display: flex;
+  align-items: center;
+  transform: translate(50%, -50%);
+}
+
+.left-intermediate-consumption-cable {
+  background-color: #0f0101;
+  height: 3px;
+  position: absolute;
+  right: -235px; /* Ajusta para alinear con el vertical-connector */
+}
+
+.left-intermediate-consumption-box {
+  border: 3px solid black;
+  padding: 1vw;
+  margin-right: 40px; /* Espacio después del cable */
+}
+
+.vertical-connector {
+  width: 4px;
+  height:30vh; /* Altura ajustada */
+  background-color: black;
+  position: absolute;
+  left: 49.9%;
+  bottom: 50vh;
+}
+
+.vertical-connector-2{
+  width: 4px;
+  height:30.5vh; /* Altura ajustada */
+  background-color: #000000;
+  position: absolute;
+  left: 49.9%;
+  margin-left: 6px;
+  bottom: 19.5vh;
+}
+
+.plant-box {
+  border: 3px solid black;
+  padding: 1vw;
+  margin-top: 60vh; /* Margen superior ajustado */
+}
+
+.plant {
+  text-align: center;
+}

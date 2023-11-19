@@ -1,0 +1,207 @@
+.contenedor {
+	position: relative;
+	height: 100vh;
+	/* Altura total de la ventana del navegador */
+	width: 100vw;
+	/* Ancho total de la ventana del navegador */
+	overflow: hidden;
+}
+
+.pantalla {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.active {
+	opacity: 1;
+}
+
+.inactive {
+	opacity: 0;
+}
+
+.flecha {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: none;
+	border: none;
+	cursor: pointer;
+	z-index: 10;
+}
+
+.izquierda {
+	left: 10px;
+
+}
+
+.derecha {
+	right: 10px;
+}
+
+h1 {
+    position: absolute; /* Posición absoluta para ubicarse en relación con su contenedor */
+    top: 10px; /* Alinear en la parte superior */
+    margin-top: 0; /* Ajustar el margen superior si es necesario */
+    z-index: 2; /* Asegurar que se superponga sobre el iframe */
+    font-family: "Candara", cursive;
+    font-size: 40px;
+	left: 110px;
+    text-align: left;
+    color: black;
+}
+
+.pantalla-uno,
+.pantalla-dos,
+.pantalla-individual {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	background-color: #f0f0f0;
+}
+
+.motores-1-4{
+	display:flex;
+	flex-direction: row;
+/*	background-color: red; */
+	width: 100%;
+}
+
+.motores-5-7{
+	display:flex;
+	flex-direction: row;
+/*	background-color: yellow; */
+	width: 100%;
+}
+
+.container-left, .container-right {
+/* Ocupa la mitad del espacio disponible */
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 40%;
+	height: 100%;
+}
+
+.container-right {
+    display:flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 60%;
+	height: 100%;
+	margin-right: 2%;
+}
+
+.grafana-motor-1 {
+	display:flex;
+	justify-content: center;
+	width: 25%;
+	height: 100%;
+/*	background-color: blueviolet; */
+	margin: 1%;
+}
+
+
+.grafana-motor-2 {
+	display:flex;
+	justify-content: center;
+	width: 33%;
+/*	background-color: brown; */
+	margin: 1%;
+}
+
+.container-up-left{
+	display:flex;
+	height:70%;
+	width: 100%;
+	flex-direction:column;
+	margin: 2%;
+}
+
+.container-up-right{
+	display:flex;
+	height:70%;
+	width: 100%;
+	flex-direction:column;
+	margin-bottom: 2%;
+	margin-left: 4%;
+	justify-content: space-evenly;
+}
+
+.container-down-left{
+	display:flex;
+	height:30%;
+	flex-direction:column;
+	margin: 2%;
+}
+
+.container-down-right{
+	display:flex;
+/*	background-color: black; */
+	height: 30%;
+	margin: 2%;
+	margin-left:4%;
+	margin-right: 2%;
+	width: 100%;
+}
+
+.grafana-horizonte{
+	display:flex;
+	justify-content: center;
+}
+
+.grafana-kpi{
+	width: 100%;
+	margin: 2%;
+	height: 100%;
+/*	background-color: yellow; */
+	justify-content: center;
+}
+
+.grafana-alerts{
+	height:100%;
+	width: 100%;
+	display:flex;
+	justify-content: center;
+}
+
+.kpi-1{
+	display:flex;
+	flex-direction: row;
+/*	background-color: red; */
+	width: 100%;
+}
+
+.kpi-2-3{
+	display:flex;
+	flex-direction: row;
+/*	background-color: yellow; */
+	width: 100%;
+}
+
+.container-left-2, .container-right-2 {
+	/* Ocupa la mitad del espacio disponible */
+		display:flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+		margin-top: 4%;
+}
+
+h2{
+	position: absolute; /* Posición absoluta para ubicarse en relación con su contenedor */
+    top: 0; /* Alinear en la parte superior */
+    margin-top: 0; /* Ajustar el margen superior si es necesario */
+    z-index: 2; /* Asegurar que se superponga sobre el iframe */
+    font-family: "Candara", cursive;
+    font-size: 40px;
+	right:0; 
+    text-align: left;
+    color: red;
+}

@@ -1,0 +1,38 @@
+version: '3'
+services:
+  mysql:
+    build:
+      context: ./database
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+    networks:
+      lan:
+        ipv4_address: 192.168.0.6
+
+  grafana:
+    image: grafana/grafana:latest
+    ports:
+      - "3000:3000"
+    networks:
+      lan:
+        ipv4_address: 192.168.0.5
+    environment:
+      - MARIADB_ROOT_PASSWORD=rootpassword
+      - MARIADB_USER=root
+      - DATABASE_NAME=mydatabase
+
+
+networks:
+  lan:
+    driver: macvlan
+    driver_opts:
+      parent: wlp2s0
+    ipam:
+      config:
+        - subnet: "192.168.0.0/24"
+          gateway: "192.168.0.1"
+volumes:
+  mysql-data:
+
